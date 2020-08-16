@@ -13,18 +13,18 @@ def join_tup(tup):
     return result
 
 sum = 0
-found_products = {}
+found_products = []
 
 def check_pandigital(perm, num1_size, num2_size):
     num1 = join_tup(perm[:num1_size])
     num2 = join_tup(perm[num1_size:num1_size+num2_size])
     product = num1 * num2
     num3 = join_tup(p[num1_size+num2_size:])
-    product_unfound = not product in found_products.keys()
+    product_unfound = not product in found_products
     if product == num3 and product_unfound:
         global sum
         sum += product
-        found_products[product] = True
+        found_products.append(product)
 
 for p in perms:
     # Check first case: 1-digit number * 4-digit number = 4-digit number
