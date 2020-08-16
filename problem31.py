@@ -43,6 +43,7 @@ class State:
             child = State(self.context, index, sub_target)
             child.generate_child_states()
 
+
 if __name__ == "__main__":
     coins = [200, 100, 50, 20, 10, 5, 2, 1]
     target = 200
