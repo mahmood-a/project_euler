@@ -17,9 +17,6 @@ class CoinsCounter:
 
 
 class State:
-    currency_units = []
-    solutions_count = 0
-
     def __init__(self, context_table, unit_index, target_sum):
         self.context = context_table
         self.unit_index = unit_index
