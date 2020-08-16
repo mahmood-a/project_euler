@@ -1,5 +1,6 @@
 # ProjectEuler, solution to problem 31 #
-# This is an example of a State Space Tree, Without the use of Backtracking #
+# This solution is an example of a State Space Tree, Without the use of Backtracking #
+
 from math import ceil
 
 class CoinsCounter:
