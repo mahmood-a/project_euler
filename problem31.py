@@ -11,7 +11,7 @@ class CoinsCounter:
         self.solutions_count = 0
     
     def count_solutions(self):
-        state = State(self, 0,self.target)
+        state = State(context=self, unit_index=0, target_sum=self.target)
         state.generate_child_states()
         return self.solutions_count
 
